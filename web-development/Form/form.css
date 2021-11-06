@@ -1,0 +1,217 @@
+* {
+  font-size: calc(5px + 1vw);
+}
+
+body {
+  max-width: 700px;
+  margin: 3% auto 3% auto;
+  line-height: normal;
+  font-family: "Arima Madurai", cursive;
+}
+
+h1,
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 8px;
+  margin: auto;
+  width: 60%;
+  padding: 1.2%;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1% 0px 1% 0px;
+  background-color: turquoise;
+  border-radius: 8px;
+  padding: 1.5%;
+}
+/* Basic Layout of all the categories */
+
+#personal-info,
+#contact-details,
+#your-thoughts {
+  padding: 1%;
+  background-color: aliceblue;
+  border-radius: 8px;
+  border: 1px solid rebeccapurple;
+  margin: 2%;
+}
+
+#pic {
+  height: calc(2rem + 10vw);
+  width: calc(2rem + 10vw);
+  border-radius: 50%;
+}
+
+#pic img {
+  border-radius: 50%;
+}
+
+#pic img:hover {
+  border: blueviolet 2px solid;
+}
+
+/* #profile-pic {
+  height: calc(2rem + 10vw);
+  width: calc(2rem + 10vw);
+  border-radius: 50%;
+}
+
+#pic:hover,
+#profile-pic:hover {
+  background-color: rgb(156, 156, 156);
+} */
+
+#tnc,
+#buttons {
+  border: none;
+}
+
+#buttons {
+  text-align: center;
+}
+/* 
+label[for="pledge"] {
+  display: flex;
+} */
+
+fieldset#tnc {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 2.25px;
+}
+
+#pledge {
+  margin: 0px;
+  height: 0.8em;
+}
+
+#pledge:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: royalblue;
+  padding: 0.5em;
+  font-size: 1rem;
+  border: none;
+  text-shadow: 2px 2px 5px white;
+}
+
+button:hover {
+  background-color: rgb(42, 71, 155);
+  border: tomato 2px solid;
+  cursor: pointer;
+}
+
+/* Size for Inputs */
+
+#fname,
+#lname,
+#con-num,
+#nationality,
+#state {
+  width: 6rem;
+}
+
+#email {
+  width: 9rem;
+}
+
+#age {
+  width: 2rem;
+}
+
+#zip-code {
+  width: 4rem;
+}
+
+textarea {
+  width: 80%;
+  height: 10vh;
+}
+
+/* Form Data Layout */
+
+.personal-info div {
+  margin: 2% 0px 2% 0px;
+}
+
+div.pic {
+  float: right;
+  width: 40%;
+  margin: 0px;
+  display: grid;
+  justify-items: center;
+}
+
+div.pic label {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-areas: "address address" "zip-code state" "con-num email";
+}
+
+div.address {
+  grid-area: address;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+div.zip-code {
+  grid-area: zip-code;
+}
+
+div.state {
+  grid-area: state;
+}
+
+div.con-num {
+  grid-area: con-num;
+}
+
+div.email {
+  grid-area: email;
+}
+
+.contact-details div {
+  margin: 2% 0px 2% 0px;
+}
+
+#your-thoughts label {
+  display: block;
+  margin: 1% 0px 1% 0px;
+}
+
+#your-thoughts div {
+  margin: 3% 0px 3% 0px;
+}
+
+#your-thoughts div.else {
+  margin-bottom: 0px;
+}
+
+input {
+  margin: 0px;
+}
+
+div.gender {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
